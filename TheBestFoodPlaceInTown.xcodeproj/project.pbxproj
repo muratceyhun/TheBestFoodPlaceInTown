@@ -14,6 +14,14 @@
 		435A62E0294F446C00974DD6 /* TheBestFoodPlaceInTown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 435A62DE294F446C00974DD6 /* TheBestFoodPlaceInTown.xcdatamodeld */; };
 		435A62E2294F446D00974DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435A62E1294F446D00974DD6 /* Assets.xcassets */; };
 		435A62E5294F446D00974DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435A62E3294F446D00974DD6 /* LaunchScreen.storyboard */; };
+		435A62F0294F5B7500974DD6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62EF294F5B7500974DD6 /* MainView.swift */; };
+		435A62F2294F5B8C00974DD6 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F1294F5B8C00974DD6 /* PlaceDetailsView.swift */; };
+		435A62F4294F5D8400974DD6 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F3294F5D8400974DD6 /* PlaceDetailsViewController.swift */; };
+		435A62F7294F5F7D00974DD6 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F6294F5F7D00974DD6 /* PlacesTableViewController.swift */; };
+		435A62FC294F603300974DD6 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62FB294F603300974DD6 /* PlacesTableViewCell.swift */; };
+		435A6301294FA55700974DD6 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A6300294FA55700974DD6 /* LocationView.swift */; };
+		435A6303294FA5E500974DD6 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A6302294FA5E500974DD6 /* LocationViewController.swift */; };
+		435A6306294FA79500974DD6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A6305294FA79500974DD6 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		435A62E1294F446D00974DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435A62E4294F446D00974DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435A62E6294F446D00974DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435A62EF294F5B7500974DD6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		435A62F1294F5B8C00974DD6 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
+		435A62F3294F5D8400974DD6 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		435A62F6294F5F7D00974DD6 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		435A62FB294F603300974DD6 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		435A6300294FA55700974DD6 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		435A6302294FA5E500974DD6 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		435A6305294FA79500974DD6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,8 @@
 		435A62D4294F446C00974DD6 /* TheBestFoodPlaceInTown */ = {
 			isa = PBXGroup;
 			children = (
+				435A6304294FA78600974DD6 /* Services */,
+				435A62EC294F5B5700974DD6 /* Pages */,
 				435A62D5294F446C00974DD6 /* AppDelegate.swift */,
 				435A62D7294F446C00974DD6 /* SceneDelegate.swift */,
 				435A62D9294F446C00974DD6 /* ViewController.swift */,
@@ -68,6 +86,76 @@
 				435A62DE294F446C00974DD6 /* TheBestFoodPlaceInTown.xcdatamodeld */,
 			);
 			path = TheBestFoodPlaceInTown;
+			sourceTree = "<group>";
+		};
+		435A62EC294F5B5700974DD6 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				435A62FD294FA51200974DD6 /* Location */,
+				435A62F5294F5F4C00974DD6 /* PlacesList */,
+				435A62ED294F5B6100974DD6 /* Details */,
+				435A62EF294F5B7500974DD6 /* MainView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		435A62ED294F5B6100974DD6 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				435A62EE294F5B6700974DD6 /* View */,
+				435A62F3294F5D8400974DD6 /* PlaceDetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		435A62EE294F5B6700974DD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				435A62F1294F5B8C00974DD6 /* PlaceDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		435A62F5294F5F4C00974DD6 /* PlacesList */ = {
+			isa = PBXGroup;
+			children = (
+				435A62FA294F5FF800974DD6 /* View */,
+				435A62F6294F5F7D00974DD6 /* PlacesTableViewController.swift */,
+			);
+			path = PlacesList;
+			sourceTree = "<group>";
+		};
+		435A62FA294F5FF800974DD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				435A62FB294F603300974DD6 /* PlacesTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		435A62FD294FA51200974DD6 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				435A62FF294FA53100974DD6 /* View */,
+				435A6302294FA5E500974DD6 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		435A62FF294FA53100974DD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				435A6300294FA55700974DD6 /* LocationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		435A6304294FA78600974DD6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				435A6305294FA79500974DD6 /* LocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +230,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				435A62DA294F446C00974DD6 /* ViewController.swift in Sources */,
+				435A62F7294F5F7D00974DD6 /* PlacesTableViewController.swift in Sources */,
 				435A62D6294F446C00974DD6 /* AppDelegate.swift in Sources */,
+				435A62F4294F5D8400974DD6 /* PlaceDetailsViewController.swift in Sources */,
 				435A62E0294F446C00974DD6 /* TheBestFoodPlaceInTown.xcdatamodeld in Sources */,
+				435A6303294FA5E500974DD6 /* LocationViewController.swift in Sources */,
+				435A62FC294F603300974DD6 /* PlacesTableViewCell.swift in Sources */,
+				435A62F2294F5B8C00974DD6 /* PlaceDetailsView.swift in Sources */,
+				435A6301294FA55700974DD6 /* LocationView.swift in Sources */,
+				435A62F0294F5B7500974DD6 /* MainView.swift in Sources */,
+				435A6306294FA79500974DD6 /* LocationService.swift in Sources */,
 				435A62D8294F446C00974DD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
