@@ -16,20 +16,26 @@ class LocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-
-        locationView.allowed = {
-            self.locationService?.demandPermission()
-            print("PERMİTTED")
-        }
         
-
-
-
+        self.locationService = LocationService()
+        setupLocationViewObserver()
 
     }
     
+    func setLocationService(locationService: LocationService) {
+       self.locationService = locationService
+        
+   }
+    
+    
+    private func setupLocationViewObserver() {
+        locationView?.allowed = { [weak self] in
+            self?.locationService?.demandPermission()
+            print("PERMİTTED")
+            print(self?.locationService)
+        }
+        
+    }
 
     
 

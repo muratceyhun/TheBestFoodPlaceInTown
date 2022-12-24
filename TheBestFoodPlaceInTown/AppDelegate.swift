@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         switch locationService.condition {
-        case .denied, .notDetermined, .restricted :
+        case .denied, .notDetermined, .restricted, .authorizedAlways, .authorizedWhenInUse:
             let locationVC = storyboard.instantiateViewController(withIdentifier: "LocationViewController") as? LocationViewController
             
             
-            locationVC?.locationService = locationService
+            locationVC?.setLocationService(locationService: locationService)
             
             window.rootViewController = locationVC
         default :
