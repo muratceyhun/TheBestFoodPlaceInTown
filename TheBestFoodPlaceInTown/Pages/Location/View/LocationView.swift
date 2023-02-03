@@ -9,16 +9,11 @@ import UIKit
 
 @IBDesignable class LocationView: MainView {
     
-    
-    
     @IBOutlet weak var btnAllow : UIButton!
     @IBOutlet weak var btnDeny : UIButton!
     
     
     var allowed : (() -> Void)?
-    
-    
-    
     
     @IBAction func btnAllowClicked(_ sender : UIButton){
         allowed?()
@@ -28,16 +23,6 @@ import UIKit
     @IBAction func btnDenyClicked(_ sender : UIButton){
         
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
 
 }

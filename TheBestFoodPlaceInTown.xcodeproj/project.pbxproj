@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,14 +17,19 @@
 		435A62F0294F5B7500974DD6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62EF294F5B7500974DD6 /* MainView.swift */; };
 		435A62F2294F5B8C00974DD6 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F1294F5B8C00974DD6 /* PlaceDetailsView.swift */; };
 		435A62F4294F5D8400974DD6 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F3294F5D8400974DD6 /* PlaceDetailsViewController.swift */; };
-		435A62F7294F5F7D00974DD6 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F6294F5F7D00974DD6 /* PlacesTableViewController.swift */; };
-		435A62FC294F603300974DD6 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62FB294F603300974DD6 /* PlacesTableViewCell.swift */; };
+		435A62F7294F5F7D00974DD6 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62F6294F5F7D00974DD6 /* PlacesViewController.swift */; };
 		435A6301294FA55700974DD6 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A6300294FA55700974DD6 /* LocationView.swift */; };
 		435A6303294FA5E500974DD6 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A6302294FA5E500974DD6 /* LocationViewController.swift */; };
 		435A6306294FA79500974DD6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A6305294FA79500974DD6 /* LocationService.swift */; };
+		43B4990A298985970041611B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B49909298985970041611B /* NetworkService.swift */; };
+		43DEBFD1298C492A0039662E /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEBFCF298C492A0039662E /* PlaceTableViewCell.swift */; };
+		43DEBFD2298C492A0039662E /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DEBFD0298C492A0039662E /* PlaceTableViewCell.xib */; };
+		43EF8DD9298AC704009B7234 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EF8DD8298AC704009B7234 /* Models.swift */; };
+		8607D9D9ABEBC47A43F73664 /* Pods_TheBestFoodPlaceInTown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15051FA7F70F9F88AF86B9C8 /* Pods_TheBestFoodPlaceInTown.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15051FA7F70F9F88AF86B9C8 /* Pods_TheBestFoodPlaceInTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBestFoodPlaceInTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435A62D2294F446C00974DD6 /* TheBestFoodPlaceInTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBestFoodPlaceInTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435A62D5294F446C00974DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435A62D7294F446C00974DD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +42,16 @@
 		435A62EF294F5B7500974DD6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		435A62F1294F5B8C00974DD6 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
 		435A62F3294F5D8400974DD6 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
-		435A62F6294F5F7D00974DD6 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
-		435A62FB294F603300974DD6 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		435A62F6294F5F7D00974DD6 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		435A6300294FA55700974DD6 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		435A6302294FA5E500974DD6 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		435A6305294FA79500974DD6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		43B49909298985970041611B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		43DEBFCF298C492A0039662E /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		43DEBFD0298C492A0039662E /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		43EF8DD8298AC704009B7234 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BF8018E0AA44E78A4B61CF0D /* Pods-TheBestFoodPlaceInTown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBestFoodPlaceInTown.release.xcconfig"; path = "Target Support Files/Pods-TheBestFoodPlaceInTown/Pods-TheBestFoodPlaceInTown.release.xcconfig"; sourceTree = "<group>"; };
+		D10A5B69D8043EAEC1CB994D /* Pods-TheBestFoodPlaceInTown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBestFoodPlaceInTown.debug.xcconfig"; path = "Target Support Files/Pods-TheBestFoodPlaceInTown/Pods-TheBestFoodPlaceInTown.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8607D9D9ABEBC47A43F73664 /* Pods_TheBestFoodPlaceInTown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +71,8 @@
 			children = (
 				435A62D4294F446C00974DD6 /* TheBestFoodPlaceInTown */,
 				435A62D3294F446C00974DD6 /* Products */,
+				49EDE9DCA4FD3967CA86A104 /* Pods */,
+				54E25F872C610ED36B73D1BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				435A62FA294F5FF800974DD6 /* View */,
-				435A62F6294F5F7D00974DD6 /* PlacesTableViewController.swift */,
+				435A62F6294F5F7D00974DD6 /* PlacesViewController.swift */,
 			);
 			path = PlacesList;
 			sourceTree = "<group>";
@@ -128,7 +141,9 @@
 		435A62FA294F5FF800974DD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				435A62FB294F603300974DD6 /* PlacesTableViewCell.swift */,
+				43EF8DD8298AC704009B7234 /* Models.swift */,
+				43DEBFCF298C492A0039662E /* PlaceTableViewCell.swift */,
+				43DEBFD0298C492A0039662E /* PlaceTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,8 +169,26 @@
 			isa = PBXGroup;
 			children = (
 				435A6305294FA79500974DD6 /* LocationService.swift */,
+				43B49909298985970041611B /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		49EDE9DCA4FD3967CA86A104 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D10A5B69D8043EAEC1CB994D /* Pods-TheBestFoodPlaceInTown.debug.xcconfig */,
+				BF8018E0AA44E78A4B61CF0D /* Pods-TheBestFoodPlaceInTown.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54E25F872C610ED36B73D1BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15051FA7F70F9F88AF86B9C8 /* Pods_TheBestFoodPlaceInTown.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 435A62E9294F446D00974DD6 /* Build configuration list for PBXNativeTarget "TheBestFoodPlaceInTown" */;
 			buildPhases = (
+				A46B1024093EC919DEF655B5 /* [CP] Check Pods Manifest.lock */,
 				435A62CE294F446C00974DD6 /* Sources */,
 				435A62CF294F446C00974DD6 /* Frameworks */,
 				435A62D0294F446C00974DD6 /* Resources */,
+				8C91207AB7C651352E1BE1D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +229,7 @@
 				};
 			};
 			buildConfigurationList = 435A62CD294F446C00974DD6 /* Build configuration list for PBXProject "TheBestFoodPlaceInTown" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -219,10 +254,53 @@
 				435A62E5294F446D00974DD6 /* LaunchScreen.storyboard in Resources */,
 				435A62E2294F446D00974DD6 /* Assets.xcassets in Resources */,
 				435A62DD294F446C00974DD6 /* Main.storyboard in Resources */,
+				43DEBFD2298C492A0039662E /* PlaceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C91207AB7C651352E1BE1D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheBestFoodPlaceInTown/Pods-TheBestFoodPlaceInTown-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheBestFoodPlaceInTown/Pods-TheBestFoodPlaceInTown-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheBestFoodPlaceInTown/Pods-TheBestFoodPlaceInTown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A46B1024093EC919DEF655B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheBestFoodPlaceInTown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		435A62CE294F446C00974DD6 /* Sources */ = {
@@ -230,17 +308,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				435A62DA294F446C00974DD6 /* ViewController.swift in Sources */,
-				435A62F7294F5F7D00974DD6 /* PlacesTableViewController.swift in Sources */,
+				435A62F7294F5F7D00974DD6 /* PlacesViewController.swift in Sources */,
 				435A62D6294F446C00974DD6 /* AppDelegate.swift in Sources */,
 				435A62F4294F5D8400974DD6 /* PlaceDetailsViewController.swift in Sources */,
 				435A62E0294F446C00974DD6 /* TheBestFoodPlaceInTown.xcdatamodeld in Sources */,
 				435A6303294FA5E500974DD6 /* LocationViewController.swift in Sources */,
-				435A62FC294F603300974DD6 /* PlacesTableViewCell.swift in Sources */,
 				435A62F2294F5B8C00974DD6 /* PlaceDetailsView.swift in Sources */,
 				435A6301294FA55700974DD6 /* LocationView.swift in Sources */,
 				435A62F0294F5B7500974DD6 /* MainView.swift in Sources */,
 				435A6306294FA79500974DD6 /* LocationService.swift in Sources */,
+				43B4990A298985970041611B /* NetworkService.swift in Sources */,
 				435A62D8294F446C00974DD6 /* SceneDelegate.swift in Sources */,
+				43EF8DD9298AC704009B7234 /* Models.swift in Sources */,
+				43DEBFD1298C492A0039662E /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -372,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -384,6 +464,7 @@
 		};
 		435A62EA294F446D00974DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10A5B69D8043EAEC1CB994D /* Pods-TheBestFoodPlaceInTown.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,11 +473,13 @@
 				DEVELOPMENT_TEAM = C7T7MNSP5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheBestFoodPlaceInTown/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To access location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +495,7 @@
 		};
 		435A62EB294F446D00974DD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8018E0AA44E78A4B61CF0D /* Pods-TheBestFoodPlaceInTown.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -420,11 +504,13 @@
 				DEVELOPMENT_TEAM = C7T7MNSP5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheBestFoodPlaceInTown/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To access location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

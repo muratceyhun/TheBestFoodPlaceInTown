@@ -34,17 +34,12 @@ final class LocationService : NSObject {
     
     
     func demandPermission() {
-        
-        print("şfğfadkfa")
         manager.requestWhenInUseAuthorization()
     }
     
     func demandLocation() {
         manager.requestLocation()
     }
-    
-    
-    
 }
 
 

@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import Moya
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,30 +15,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let window = UIWindow()
     let locationService = LocationService()
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let networkService = MoyaProvider<YelpService.DataSupplier>()
 
+    let decoder = JSONDecoder()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-
+        
         switch locationService.condition {
         case .denied, .notDetermined, .restricted, .authorizedAlways, .authorizedWhenInUse:
             let locationVC = storyboard.instantiateViewController(withIdentifier: "LocationViewController") as? LocationViewController
-            
-            
             locationVC?.setLocationService(locationService: locationService)
-            
             window.rootViewController = locationVC
+            fetchPlaces()
+
         default :
-            assertionFailure()
+            let navigation = storyboard.instantiateViewController(withIdentifier: "PlaceNavController")
+            window.rootViewController = navigation
+            fetchPlaces()
         }
-        
         
         window.makeKeyAndVisible()
 
-
-
-
-
         return true
+    }
+    
+    fileprivate func fetchPlaces() {
+        networkService.request(.search(lat: 41.01, long: 28.97)) { result in
+            switch result {
+            case .success(let data):
+                self.decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let data = try? self.decoder.decode(AllData.self, from: data.data)
+                print(data)
+                let placesList = data?.businesses.map(PlacesListViewModel.init)
+                if let navigation = self.window.rootViewController as? UINavigationController, let placesViewController = navigation.topViewController as?  PlacesViewController {
+                    placesViewController.placesList = placesList ?? []
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 
     // MARK: UISceneSession Lifecycle

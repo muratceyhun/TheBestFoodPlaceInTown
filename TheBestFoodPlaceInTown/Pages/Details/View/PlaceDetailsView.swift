@@ -5,7 +5,6 @@
 //  Created by Murat Ceyhun Korpeoglu on 18.12.2022.
 //
 
-import Foundation
 import UIKit
 import MapKit
 
