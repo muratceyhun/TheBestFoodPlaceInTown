@@ -10,6 +10,8 @@ import UIKit
 class PlacesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+
     var placesList = [PlacesListViewModel]() {
         didSet {
             tableView.reloadData()
@@ -26,6 +28,7 @@ class PlacesViewController: UIViewController {
 extension PlacesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return placesList.count
+//        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

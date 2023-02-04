@@ -141,7 +141,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KbE-gM-HOg"/>
                     <connections>
-                        <outlet property="tableView" destination="mwc-65-80t" id="NbM-kg-eIW"/>
+                        <outlet property="tableView" destination="mwc-65-80t" id="EWO-zb-iUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWy-7S-t4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
