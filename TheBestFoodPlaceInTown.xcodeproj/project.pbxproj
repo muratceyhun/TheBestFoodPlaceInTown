@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4329C321298EF78000FBA80F /* InternetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329C320298EF78000FBA80F /* InternetService.swift */; };
+		4329C323298EF7D200FBA80F /* InternetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329C322298EF7D200FBA80F /* InternetHelper.swift */; };
 		435A62D6294F446C00974DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62D5294F446C00974DD6 /* AppDelegate.swift */; };
 		435A62D8294F446C00974DD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62D7294F446C00974DD6 /* SceneDelegate.swift */; };
 		435A62DA294F446C00974DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A62D9294F446C00974DD6 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		15051FA7F70F9F88AF86B9C8 /* Pods_TheBestFoodPlaceInTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBestFoodPlaceInTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4329C320298EF78000FBA80F /* InternetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetService.swift; sourceTree = "<group>"; };
+		4329C322298EF7D200FBA80F /* InternetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetHelper.swift; sourceTree = "<group>"; };
 		435A62D2294F446C00974DD6 /* TheBestFoodPlaceInTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBestFoodPlaceInTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435A62D5294F446C00974DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435A62D7294F446C00974DD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			children = (
 				435A6305294FA79500974DD6 /* LocationService.swift */,
 				43B49909298985970041611B /* NetworkService.swift */,
+				4329C320298EF78000FBA80F /* InternetService.swift */,
+				4329C322298EF7D200FBA80F /* InternetHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,6 +321,8 @@
 				435A6303294FA5E500974DD6 /* LocationViewController.swift in Sources */,
 				435A62F2294F5B8C00974DD6 /* PlaceDetailsView.swift in Sources */,
 				435A6301294FA55700974DD6 /* LocationView.swift in Sources */,
+				4329C323298EF7D200FBA80F /* InternetHelper.swift in Sources */,
+				4329C321298EF78000FBA80F /* InternetService.swift in Sources */,
 				435A62F0294F5B7500974DD6 /* MainView.swift in Sources */,
 				435A6306294FA79500974DD6 /* LocationService.swift in Sources */,
 				43B4990A298985970041611B /* NetworkService.swift in Sources */,

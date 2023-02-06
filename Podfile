@@ -6,7 +6,7 @@ target 'TheBestFoodPlaceInTown' do
   use_frameworks!
 
   # Pods for TheBestFoodPlaceInTown
-
+	pod 'Alamofire'
 	pod 'Moya', '~> 15.0'
  	pod 'AlamofireImage'
 

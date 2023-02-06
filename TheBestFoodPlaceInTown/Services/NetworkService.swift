@@ -32,7 +32,7 @@ enum YelpService {
         var task: Moya.Task {
             switch self {
             case let .search(lat, long):
-                return .requestParameters(parameters: ["latitude": lat, "longitude": long, "limit": 2], encoding: URLEncoding.queryString)
+                return .requestParameters(parameters: ["latitude": lat, "longitude": long, "limit": 3], encoding: URLEncoding.queryString)
             }
         }
         

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 import CoreData
 import Moya
 
@@ -16,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let locationService = LocationService()
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let decoder = JSONDecoder()
-    let networkService = MoyaProvider<YelpService.DataSupplier>()
-    
+    var navigationController : UINavigationController?
+        let networkService = MoyaProvider<YelpService.DataSupplier>()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -26,35 +27,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let locationVC = storyboard.instantiateViewController(withIdentifier: "LocationViewController") as? LocationViewController
             locationVC?.setLocationService(locationService: locationService)
             window.rootViewController = locationVC
-                        fetchPlaces()
+            fetchPlaces()
             
         default :
             let navigation = storyboard.instantiateViewController(withIdentifier: "PlaceNavController")
             window.rootViewController = navigation
-            fetchPlaces()
+                        fetchPlaces()
         }
         window.makeKeyAndVisible()
         return true
     }
     
-    fileprivate func fetchPlaces() {
-        networkService.request(.search(lat: 41.01, long: 28.97)) { result in
-            switch result {
-            case .success(let data):
-                self.decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let data = try? self.decoder.decode(AllData.self, from: data.data)
-                print(data)
-                let placesList = data?.businesses.compactMap(PlacesListViewModel.init)
-                if let navigation = self.window.rootViewController as? UINavigationController, let placesViewController = navigation.topViewController as?  PlacesViewController {
-                    placesViewController.placesList = placesList ?? []
+        fileprivate func fetchPlaces() {
+            networkService.request(.search(lat: 41.01, long: 28.97)) { result in
+                switch result {
+                case .success(let derivedData):
+                    self.decoder.keyDecodingStrategy = .convertFromSnakeCase
+                    let data = try? self.decoder.decode(AllData.self, from: derivedData.data)
+//                    if let data = data {
+//                        print(data)
+//                    }
+                    let placesList = data?.businesses.compactMap(PlacesListViewModel.init)
+                    if let navigation = self.window.rootViewController as? UINavigationController, let placesViewController = navigation.topViewController as? PlacesViewController {
+                        placesViewController.placesList = placesList ?? []
+                    } else if let navigation1 = self.storyboard.instantiateViewController(withIdentifier: "PlaceNavController") as?
+                                UINavigationController {
+                        self.navigationController = navigation1
+                        
+                        self.window.rootViewController?.present(navigation1,animated: true) {
+                        }
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
                 }
-            case .failure(let error):
-                print(error.localizedDescription)
             }
         }
-    }
     
-    // MARK: UISceneSession Lifecycle
+//     MARK: UISceneSession Lifecycle
     
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.

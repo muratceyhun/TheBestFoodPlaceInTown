@@ -115,7 +115,7 @@
         <!--Places View Controller-->
         <scene sceneID="rtK-TD-jxE">
             <objects>
-                <viewController storyboardIdentifier="PlacesTableViewController" id="6Ce-rm-JQJ" customClass="PlacesViewController" customModule="TheBestFoodPlaceInTown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlacesViewController" id="6Ce-rm-JQJ" customClass="PlacesViewController" customModule="TheBestFoodPlaceInTown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fzd-nD-6G9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
