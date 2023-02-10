@@ -66,7 +66,4 @@ extension LocationService : CLLocationManagerDelegate {
             changedLocation?(true)
         }
     }
-    
-    
-    
 }
