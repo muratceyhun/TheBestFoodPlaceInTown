@@ -27,7 +27,6 @@ class LocationViewController: UIViewController {
         
    }
     
-    
     private func setupLocationViewObserver() {
         locationView?.allowed = { [weak self] in
             self?.locationService?.demandPermission()

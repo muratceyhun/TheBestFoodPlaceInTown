@@ -18,9 +18,6 @@ import MapKit
     @IBOutlet weak var lblLocation : UILabel!
     @IBOutlet weak var lblRate : UILabel!
     @IBOutlet weak var mapView : MKMapView!
-
-    
-    
     @IBAction func handleControl(_ sender : UIPageControl) {
         
     }
