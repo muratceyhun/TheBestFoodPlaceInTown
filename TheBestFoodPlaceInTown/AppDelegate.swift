@@ -53,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     } else if let navigation1 = self.storyboard.instantiateViewController(withIdentifier: "PlaceNavController") as?
                                 UINavigationController {
                         self.navigationController = navigation1
-                        
                         self.window.rootViewController?.present(navigation1,animated: true) {
                         }
                     }
