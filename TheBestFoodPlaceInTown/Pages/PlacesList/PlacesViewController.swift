@@ -11,7 +11,6 @@ class PlacesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-
     var placesList = [PlacesListViewModel]() {
         didSet {
             tableView.reloadData()
