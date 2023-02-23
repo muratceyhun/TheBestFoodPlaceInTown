@@ -12,7 +12,6 @@ import UIKit
     @IBOutlet weak var btnAllow : UIButton!
     @IBOutlet weak var btnDeny : UIButton!
     
-    
     var allowed : (() -> Void)?
     
     @IBAction func btnAllowClicked(_ sender : UIButton){
