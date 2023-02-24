@@ -16,11 +16,9 @@ import UIKit
     
     @IBAction func btnAllowClicked(_ sender : UIButton){
         allowed?()
-        
     }
     
     @IBAction func btnDenyClicked(_ sender : UIButton){
-        
     }
   
 
