@@ -8,7 +8,6 @@
 import UIKit
 import MapKit
 
-
 @IBDesignable class PlaceDetailsView : MainView {
     
     @IBOutlet weak var collectionView : UICollectionView!
