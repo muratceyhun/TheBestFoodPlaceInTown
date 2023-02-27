@@ -14,7 +14,6 @@ enum Result<T> {
     case failed(Error)
 }
 
-
 final class LocationService : NSObject {
     
     private let manager : CLLocationManager
