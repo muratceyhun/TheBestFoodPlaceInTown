@@ -10,7 +10,6 @@ import UIKit
 
 @IBDesignable class MainView : UIView {
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configure()
