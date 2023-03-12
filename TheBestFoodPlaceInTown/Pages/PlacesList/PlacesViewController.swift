@@ -43,3 +43,4 @@ extension PlacesViewController: UITableViewDelegate {
         return 400
     }
 }
+
