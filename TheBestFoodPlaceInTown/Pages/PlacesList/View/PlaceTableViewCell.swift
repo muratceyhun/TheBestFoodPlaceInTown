@@ -25,7 +25,6 @@ class PlaceTableViewCell: UITableViewCell {
 
     }
     
-    
     func configureImage(place: PlacesListViewModel) {
         imgPlace.af.setImage(withURL: place.imagePath)
         lblPlaceName.text = place.placeName
