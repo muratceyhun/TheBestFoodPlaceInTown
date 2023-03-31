@@ -31,3 +31,4 @@ class PlaceTableViewCell: UITableViewCell {
         lblDistance.text = place.distance
     }
 }
+
