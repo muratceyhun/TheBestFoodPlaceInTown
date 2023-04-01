@@ -4,7 +4,6 @@
 //
 //  Created by Murat Ceyhun Korpeoglu on 2.02.2023.
 //
-
 import UIKit
 import AlamofireImage
 
