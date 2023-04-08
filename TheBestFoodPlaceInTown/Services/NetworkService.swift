@@ -1,7 +1,6 @@
 //
 //  NetworkService.swift
 //  TheBestFoodPlaceInTown
-//
 //  Created by Murat Ceyhun Korpeoglu on 31.01.2023.
 //
 
