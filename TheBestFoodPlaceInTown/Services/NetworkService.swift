@@ -38,6 +38,5 @@ enum YelpService {
             return ["Authorization": "Bearer \(apiKey)"]
         }
         
-        
     }
 }
